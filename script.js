@@ -48,7 +48,8 @@ function playGame() {
         else { console.log(`${humanChoice} ties ${computerChoice}, draw!`); }
         console.log(`HUMAN SCORE: ${humanScore}\nCOMPUTER SCORE: ${computerScore}`);
     }
-    console.log("The winner is: " + (humanScore > computerScore ? "Human!" : "Computer!"));
+    if (humanScore != computerScore) { console.log("The winner is: " + (humanScore > computerScore ? "Human!" : "Computer!")); }
+    else { console.log("It's a tie! No winner"); }
 }
 
 playGame();
